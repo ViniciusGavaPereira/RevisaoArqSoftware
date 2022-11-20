@@ -7,7 +7,15 @@ public class NaveJogador implements Subject {
         private ArrayList<Acoes> listaAcoes = new ArrayList<Acoes>();
         private ArrayList<Observer> listaObservadores = new ArrayList<Observer>();
         private String nome;
+        private static NaveJogador naveJogador;
+
         
+        public static NaveJogador getInstance(String name) {
+            if (naveJogador == null) {
+                naveJogador = new NaveJogador(name);
+            }
+            return naveJogador;
+        }
         
         public NaveJogador() {
         }
