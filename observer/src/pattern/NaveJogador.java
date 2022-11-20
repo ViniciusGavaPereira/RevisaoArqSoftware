@@ -36,6 +36,7 @@ public class NaveJogador implements Subject {
         }
         @Override
         public void adicionarAcoes(Acoes acao) {
+            System.out.println("Nave do " + this.nome + " foi para " + acao );
             listaAcoes.add(acao);         
             notificar();   
         }

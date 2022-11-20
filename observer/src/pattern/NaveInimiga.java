@@ -9,7 +9,7 @@ public class NaveInimiga implements Observer{
 	}
     @Override
 	public void update(Acoes acao) {
-		System.out.println(nome + " - AÃ§Ã£o: " + acao);
+		System.out.println(nome + " - ação: " + acao);
 	}
 
 	@Override

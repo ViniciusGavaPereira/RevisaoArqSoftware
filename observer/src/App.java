@@ -18,8 +18,9 @@ public class App {
         
 
         //Prova de que as naves são as mesmas
-        System.out.println(naveJogador);
-        System.out.println(naveJogador2);
+        System.out.println("HashCode das naves");
+        System.out.println("HashCode da nave 1: " + naveJogador);
+        System.out.println("HashCode da nave 2: " +naveJogador2);
 
     }
 }
