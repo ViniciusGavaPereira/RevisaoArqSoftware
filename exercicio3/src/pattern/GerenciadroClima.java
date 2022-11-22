@@ -5,20 +5,14 @@ import java.util.ArrayList;
 public class GerenciadroClima implements Subject{
     private ArrayList<Temperatura> listaAcoes = new ArrayList<Temperatura>();
         private ArrayList<Observer> listaObservadores = new ArrayList<Observer>();
-        
+  
 
-        //Singleton
-        private static GerenciadroClima gerenciadroClima;
-        
-        public static GerenciadroClima getInstance() {
-            if (gerenciadroClima == null) {
-                gerenciadroClima = new GerenciadroClima();
-            }
-            return gerenciadroClima;
-        }
 
+    
         public GerenciadroClima() {
         }
+
+        
 
         @Override
         public void adicionarObserver(Observer observer) {
