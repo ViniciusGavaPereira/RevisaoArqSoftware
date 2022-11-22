@@ -15,10 +15,9 @@ public class App {
         listaFuncionarios.add(new Funcionario(5,"Vinicius", "Gerente", 200.00));
 
       
-        BuscaFuncionario buscaFuncionario = (index) -> {
+        BuscaFuncionario buscaFuncionario = (nome) -> {
             
-            Funcionario funcionarioBuscado = new Funcionario(index,null,null,null);
-
+            Funcionario funcionarioBuscado = new Funcionario(null,nome,null,null);
 
             ComparadorFuncionario comparadorFuncionario = new ComparadorFuncionario();
            
@@ -30,7 +29,7 @@ public class App {
             System.out.println("Index encontrado: " + indexEncontrado);
         };
 
-        buscaFuncionario.funcionariozinho(1);
+        buscaFuncionario.funcionariozinho("Pedro");
     }
 }
 

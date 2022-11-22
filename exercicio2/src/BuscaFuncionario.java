@@ -6,7 +6,7 @@ public interface BuscaFuncionario {
     
 
     //Ordena a lista 
-     void funcionariozinho(Integer index);   
+     void funcionariozinho(String nome);   
 
     
 }
