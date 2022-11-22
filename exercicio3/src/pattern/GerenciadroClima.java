@@ -7,7 +7,14 @@ public class GerenciadroClima implements Subject{
         private ArrayList<Observer> listaObservadores = new ArrayList<Observer>();
   
 
+        private static GerenciadroClima gerenciadroClima;
 
+        public static GerenciadroClima getInstance() {
+            if (gerenciadroClima == null) {
+                gerenciadroClima = new GerenciadroClima();
+            }
+            return gerenciadroClima;
+        }
     
         public GerenciadroClima() {
         }
