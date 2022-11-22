@@ -49,8 +49,6 @@ public class NaveJogador implements Subject {
         }
 
 
-    
-
 
         @Override
         public void adicionarObserver(Observer observer) {
