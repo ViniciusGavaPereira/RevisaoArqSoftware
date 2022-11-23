@@ -30,17 +30,15 @@ public class Cliente implements Autentica {
     }
 
     @Override
-    public boolean autenticarSenha(String senha) {
+    public boolean autenticarSenha(String T) {
         if(this.senha != senha){
-            System.out.println("Não autenticado");
+            System.out.println("N?o autenticado");
             return false;
         }else{
             System.out.println("Autenticado");
             return true;
         }
-        
+    
     }
-
-
     
 }
